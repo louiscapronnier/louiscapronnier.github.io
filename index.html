@@ -1,0 +1,499 @@
+<!doctype html>
+<!--
+  Portfolio BTS SIO (SLAM ou SISR) - version vanilla (sans framework)
+  Objectif: structure SEO + accessibilite + navigation fluide + dark mode + animations legeres
+-->
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio professionnel d'etudiant BTS SIO: profil, competences et projets (SLAM/SISR)."
+    />
+    <meta name="author" content="Votre Nom" />
+    <meta name="theme-color" content="#0b5fff" />
+
+    <title>Portfolio BTS SIO - Votre Nom</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#accueil">Aller au contenu</a>
+
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <a class="brand" href="#accueil" aria-label="Retour a l'accueil">
+          <img
+            class="brand-avatar"
+            src="./images/avatar.svg"
+            alt="Avatar de Votre Nom"
+            width="34"
+            height="34"
+          />
+          <span class="brand-name">Votre Nom</span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#accueil">Accueil</a></li>
+            <li><a class="nav-link" href="#apropos">A propos</a></li>
+            <li><a class="nav-link" href="#competences">Competences</a></li>
+            <li><a class="nav-link" href="#projets">Projets</a></li>
+            <li><a class="nav-link" href="#referentiel">Referentiel</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            id="themeToggle"
+            class="icon-btn"
+            type="button"
+            aria-label="Activer ou desactiver le mode sombre"
+            aria-pressed="false"
+          >
+            <span aria-hidden="true">🌙</span>
+          </button>
+        </div>
+
+        <button id="mobileMenuBtn" class="mobile-menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span aria-hidden="true">Menu</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page" id="accueil">
+      <!-- HERO / ACCUEIL -->
+      <section class="section hero reveal" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1 id="hero-title" class="hero-title">Votre Prenom Nom</h1>
+            <p class="hero-subtitle">Etudiant BTS SIO - Option SLAM/SISR</p>
+            <p class="hero-text">
+              Je developpe des applications et/ou j'administre des systemes informatiques. Mon objectif:
+              concevoir des solutions propres, securisees et bien documentees pour repondre a un besoin reel.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn primary" href="./CV.pdf" download aria-label="Telecharger le CV (ajouter le fichier CV.pdf dans le projet)">
+                Telecharger le CV
+              </a>
+              <a class="btn" href="#projets">Voir mes projets</a>
+            </div>
+
+            <div class="hero-badges" aria-label="Points forts">
+              <div class="badge">Vanilla JS</div>
+              <div class="badge">Accessibilite</div>
+              <div class="badge">SEO</div>
+            </div>
+          </div>
+
+          <div class="hero-media" aria-hidden="true">
+            <div class="avatar-frame">
+              <img class="avatar" src="./images/avatar.svg" alt="" width="320" height="320" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- A PROPOS -->
+      <section class="section reveal" id="apropos" aria-labelledby="apropos-title">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="apropos-title">A propos</h2>
+            <p class="section-lead">Mon parcours et mon projet professionnel en lien avec le BTS SIO.</p>
+          </div>
+
+          <div class="two-cols">
+            <article class="card">
+              <h3>Parcours scolaire</h3>
+              <p>
+                <strong>2023 - 2025:</strong> Preparation BTS SIO, competences en developpement, systemes, reseaux et cyberssecurite.
+              </p>
+              <p>
+                <strong>2025 - 2026:</strong> Consolidation des projets E4/E5/E6 avec documentation et presentation orale.
+              </p>
+              <ul class="list">
+                <li>Travaux pratiques: apps web, bases de donnees, scripts, supervision.</li>
+                <li>Bonnes pratiques: Git, tests, relecture, organisation de projet.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Presentation du BTS SIO</h3>
+              <p>
+                Le BTS SIO forme a la creation de solutions informatiques pour repondre aux besoins d'une organisation.
+                Selon l'option (SLAM ou SISR), l'accent se fait sur le developpement applicatif ou l'administration des systemes.
+              </p>
+              <p>
+                Dans ce portfolio, je presente des projets concrets, des competences associees et un lien direct avec le referentiel.
+              </p>
+            </article>
+          </div>
+
+          <article class="card">
+            <h3>Projet professionnel</h3>
+            <p>
+              Je vise un profil orientee solutions: developper des applications utiles (SLAM) et/ou administrer des services fiables (SISR),
+              avec une sensibilite forte a la qualite, la securite et la documentation.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- COMPETENCES -->
+      <section class="section reveal" id="competences" aria-labelledby="competences-title">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="competences-title">Competences</h2>
+            <p class="section-lead">Competences techniques illustrees par des niveaux visuels (editable).</p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="card">
+              <h3>Competences techniques</h3>
+
+              <div class="skill">
+                <div class="skill-top">
+                  <span>HTML5 / CSS3</span>
+                  <span class="skill-percent" aria-hidden="true">90%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Niveau HTML5 / CSS3" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+                  <div class="progress-bar" style="--level: 90%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top">
+                  <span>JavaScript (vanilla)</span>
+                  <span class="skill-percent" aria-hidden="true">85%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Niveau JavaScript" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85">
+                  <div class="progress-bar" style="--level: 85%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top">
+                  <span>SQL / Bases de donnees</span>
+                  <span class="skill-percent" aria-hidden="true">75%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Niveau SQL" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
+                  <div class="progress-bar" style="--level: 75%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top">
+                  <span>Systemes / reseaux</span>
+                  <span class="skill-percent" aria-hidden="true">70%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Niveau systemes et reseaux" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
+                  <div class="progress-bar" style="--level: 70%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top">
+                  <span>Cyberssecurite (principes)</span>
+                  <span class="skill-percent" aria-hidden="true">65%</span>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Niveau cyberssecurite" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65">
+                  <div class="progress-bar" style="--level: 65%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Soft skills</h3>
+              <ul class="list">
+                <li>Travail en mode projet: planifier, livrer, documenter.</li>
+                <li>Communication: faire des presentations claires et structurées.</li>
+                <li>Qualite: tests, relecture, ameliorations iteratives.</li>
+                <li>Autonomie: apprendre rapidement et appliquer les retours.</li>
+              </ul>
+              <div class="callout" role="note">
+                Conseil BTS: dans l'oral, relie chaque competence a un projet concret.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETS -->
+      <section class="section reveal" id="projets" aria-labelledby="projets-title">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="projets-title">Projets</h2>
+            <p class="section-lead">Cartes de projets: description, competences utilisees, captures, lien GitHub, contexte.</p>
+          </div>
+
+          <div class="projects-grid" role="list" aria-label="Liste des projets">
+            <!-- Projet 1 -->
+            <article
+              class="project-card"
+              role="listitem"
+              tabindex="0"
+              data-title="Gestion de taches (Mini-app web)"
+              data-description="Une application web permettant de creer, modifier et suivre des taches. Interface claire + donnees persistantes."
+              data-context="Contexte: projet de developpement pour illustrer la conception applicative et la gestion de donnees."
+              data-competences="Conception solution applicative, G afin de gerer les donnees, Maintenance"
+              data-screenshot="./images/project-1.svg"
+              data-github="https://github.com/votre-utilisateur/mini-app-taches"
+            >
+              <img class="project-image" src="./images/project-1.svg" alt="Capture du projet Gestion de taches" width="520" height="300" loading="lazy" />
+              <div class="project-body">
+                <h3 class="project-title">Gestion de taches (Mini-app web)</h3>
+                <p class="project-desc">
+                  Creer, prioriser et suivre des taches avec une experience utilisateur fluide.
+                </p>
+                <div class="chip-row" aria-label="Competences utilisees">
+                  <span class="chip">HTML/CSS</span>
+                  <span class="chip">JavaScript</span>
+                  <span class="chip">SQL</span>
+                </div>
+                <div class="project-actions">
+                  <button class="btn small" type="button" data-open-project>Voir le projet</button>
+                  <a class="btn small ghost" href="https://github.com/votre-utilisateur/mini-app-taches" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Projet 2 -->
+            <article
+              class="project-card"
+              role="listitem"
+              tabindex="0"
+              data-title="Supervision reseau (TP/POC)"
+              data-description="Mise en place d'une supervision simple: collecte de services, logs, alertes et documentation."
+              data-context="Contexte: option SISR - administrer et superviser une infrastructure reseau."
+              data-competences="Exploitation et supervision, Installation et deploiement, Cyberssecurite"
+              data-screenshot="./images/project-2.svg"
+              data-github="https://github.com/votre-utilisateur/supervision-reseau"
+            >
+              <img class="project-image" src="./images/project-2.svg" alt="Capture du projet Supervision reseau" width="520" height="300" loading="lazy" />
+              <div class="project-body">
+                <h3 class="project-title">Supervision reseau (TP/POC)</h3>
+                <p class="project-desc">
+                  Supervision de services: centralisation, lecture des logs, alerting, et procedures.
+                </p>
+                <div class="chip-row" aria-label="Competences utilisees">
+                  <span class="chip">Linux</span>
+                  <span class="chip">Reseaux</span>
+                  <span class="chip">Scripts</span>
+                </div>
+                <div class="project-actions">
+                  <button class="btn small" type="button" data-open-project>Voir le projet</button>
+                  <a class="btn small ghost" href="https://github.com/votre-utilisateur/supervision-reseau" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Projet 3 -->
+            <article
+              class="project-card"
+              role="listitem"
+              tabindex="0"
+              data-title="Site vitrine performant (SEO + accessibilite)"
+              data-description="Refonte d'un site vitrine avec SEO technique, accessibilite, performance et dark mode."
+              data-context="Contexte: developpement front-end, bonnes pratiques et experiences utilisateur."
+              data-competences="Presence en ligne, Qualite front, Accessibilite"
+              data-screenshot="./images/project-3.svg"
+              data-github="https://github.com/votre-utilisateur/site-vitrine-seo"
+            >
+              <img class="project-image" src="./images/project-3.svg" alt="Capture du projet Site vitrine" width="520" height="300" loading="lazy" />
+              <div class="project-body">
+                <h3 class="project-title">Site vitrine performant (SEO)</h3>
+                <p class="project-desc">
+                  Structure semantic, accessibilite, performance et animation au scroll controlee.
+                </p>
+                <div class="chip-row" aria-label="Competences utilisees">
+                  <span class="chip">HTML</span>
+                  <span class="chip">CSS</span>
+                  <span class="chip">JS</span>
+                </div>
+                <div class="project-actions">
+                  <button class="btn small" type="button" data-open-project>Voir le projet</button>
+                  <a class="btn small ghost" href="https://github.com/votre-utilisateur/site-vitrine-seo" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- REFERENTIEL BTS SIO -->
+      <section class="section reveal" id="referentiel" aria-labelledby="referentiel-title">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="referentiel-title">Tableau de competencies BTS SIO</h2>
+            <p class="section-lead">Relie les projets a des blocs de competences du referentiel (editable).</p>
+          </div>
+
+          <div class="card table-wrap">
+            <table class="bts-table">
+              <thead>
+                <tr>
+                  <th scope="col">Bloc</th>
+                  <th scope="col">Competence (resume)</th>
+                  <th scope="col">Option</th>
+                  <th scope="col">Projets relies</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bloc 1</td>
+                  <td>Organiser son developpement professionnel</td>
+                  <td>Commune</td>
+                  <td><span class="tag">Mini-app web</span></td>
+                </tr>
+                <tr>
+                  <td>Bloc 1</td>
+                  <td>Mettre a disposition des utilisateurs un service informatique</td>
+                  <td>Commune</td>
+                  <td><span class="tag">Mini-app web</span>, <span class="tag">Site vitrine</span></td>
+                </tr>
+                <tr>
+                  <td>Bloc 1</td>
+                  <td>Travailler en mode projet</td>
+                  <td>Commune</td>
+                  <td><span class="tag">Supervision reseau</span>, <span class="tag">Site vitrine</span>, <span class="tag">Mini-app web</span></td>
+                </tr>
+
+                <tr>
+                  <td>Bloc 2</td>
+                  <td>Concevoir et developper une solution applicative</td>
+                  <td>SLAM</td>
+                  <td><span class="tag">Mini-app web</span></td>
+                </tr>
+                <tr>
+                  <td>Bloc 2</td>
+                  <td>Gerer les donnees + maintenance applicative</td>
+                  <td>SLAM</td>
+                  <td><span class="tag">Mini-app web</span></td>
+                </tr>
+                <tr>
+                  <td>Bloc 2</td>
+                  <td>Exploiter, depanner et superviser une solution d'infrastructure reseau</td>
+                  <td>SISR</td>
+                  <td><span class="tag">Supervision reseau</span></td>
+                </tr>
+                <tr>
+                  <td>Bloc 2</td>
+                  <td>Installer, tester et deployer une solution d'infrastructure reseau</td>
+                  <td>SISR</td>
+                  <td><span class="tag">Supervision reseau</span></td>
+                </tr>
+
+                <tr>
+                  <td>Bloc 3</td>
+                  <td>Assurer la cyberssecurite des services (infra ou applicatif)</td>
+                  <td>SLAM/SISR</td>
+                  <td><span class="tag">Mini-app web</span>, <span class="tag">Supervision reseau</span></td>
+                </tr>
+                <tr>
+                  <td>Bloc 3</td>
+                  <td>Garantir disponibilite / integrite / confidentialite</td>
+                  <td>SLAM/SISR</td>
+                  <td><span class="tag">Site vitrine</span>, <span class="tag">Supervision reseau</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="table-hint">
+              Astuce BTS: adapte la colonne "Option" et remplace les noms de projets par ceux de ton dossier E4/E5/E6.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section reveal" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="contact-title">Contact</h2>
+            <p class="section-lead">Un formulaire simple (sans backend) + liens GitHub/LinkedIn.</p>
+          </div>
+
+          <div class="two-cols">
+            <form id="contactForm" class="card contact-card" novalidate>
+              <div class="form-row">
+                <label for="name">Nom</label>
+                <input id="name" name="name" type="text" autocomplete="name" required minlength="2" />
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+              </div>
+
+              <button class="btn primary" type="submit">Envoyer</button>
+
+              <p id="formStatus" class="form-status" aria-live="polite" role="status"></p>
+            </form>
+
+            <aside class="card">
+              <h3>Liens</h3>
+              <p>Remplace les URLs par les tiennes:</p>
+              <ul class="list">
+                <li><a href="https://github.com/votre-utilisateur" target="_blank" rel="noopener noreferrer">GitHub: @votre-utilisateur</a></li>
+                <li><a href="https://www.linkedin.com/in/votre-profil" target="_blank" rel="noopener noreferrer">LinkedIn: votre-profil</a></li>
+              </ul>
+              <div class="callout" role="note">
+                Accessibilite: les liens et le bouton precedent possedent des libelles etat/aria.
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Votre Nom. Portfolio BTS SIO - HTML/CSS/JS vanilla.</p>
+      </div>
+    </footer>
+
+    <!-- MODAL PROJET -->
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+      <div class="modal-overlay" data-close-modal aria-hidden="true"></div>
+
+      <div class="modal-content" role="document">
+        <div class="modal-header">
+          <h3 id="modalTitle">Titre du projet</h3>
+          <button id="modalCloseBtn" class="icon-btn" type="button" aria-label="Fermer la fenetre">
+            Fermer
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-media">
+            <img id="modalScreenshot" src="" alt="" width="680" height="380" />
+          </div>
+
+          <div class="modal-info">
+            <p id="modalDescription" class="modal-text"></p>
+            <p class="modal-subtitle">Contexte professionnel</p>
+            <p id="modalContext" class="modal-text"></p>
+
+            <p class="modal-subtitle">Competences utilisees</p>
+            <div id="modalCompetences" class="chip-row"></div>
+
+            <div class="modal-links">
+              <a id="modalGithubLink" class="btn primary" href="#" target="_blank" rel="noopener noreferrer">Voir sur GitHub</a>
+              <a class="btn" href="#referentiel">Aller au referentiel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
