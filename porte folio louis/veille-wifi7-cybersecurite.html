@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veille — Wi-Fi 7 &amp; cybersécurité 2025</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./veille-wifi7-cybersecurite.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./index.html">
+          <img class="brand-avatar" src="./images/avatar.png" alt="Avatar" width="34" height="34" />
+          <span class="brand-name">Louis Capronnier</span>
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">Accueil</a></li>
+            <li><a class="nav-link" href="apropos.html">À propos</a></li>
+            <li><a class="nav-link" href="competences.html">Compétences</a></li>
+            <li><a class="nav-link" href="e5.html">E5</a></li>
+            <li><a class="nav-link" href="e6.html">E6</a></li>
+            <li><a class="nav-link" href="veille-technologique.html">Veille technologique</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Activer ou desactiver le mode sombre" aria-pressed="false">🌙</button>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="section reveal is-visible">
+        <div class="container">
+          <div class="veille-hero">
+            <h1>Veille technologique — Wi-Fi 7 &amp; cybersécurité (2025–2026)</h1>
+            <p class="meta">
+              BTS SIO · Période septembre 2025 – mai 2026 · Thèmes : réseaux sans fil &amp; sécurité de l'information
+            </p>
+            <p class="section-lead" style="margin-bottom: 0">
+              Cette page résume le contenu de mon document de veille : évolution du Wi-Fi 7 (802.11be), panorama cyber en France,
+              industrialisation des attaques, puis enjeux réglementaires autour de la directive NIS&nbsp;2 et du ReCyF.
+            </p>
+            <div class="veille-actions" style="margin-top: 16px">
+              <a class="btn primary" href="./docs/veille/veille-v3.docx" target="_blank" rel="noopener noreferrer" download>
+                Télécharger le document Word
+              </a>
+              <a class="btn ghost" href="./veille-technologique.html">← Retour à la page Veille</a>
+            </div>
+          </div>
+
+          <article class="card veille-card" style="margin-top: 20px">
+            <h2>Méthode de veille</h2>
+            <p>
+              La veille est construite mois par mois : chaque entrée est datée, et les sources citées correspondent à ce qui était
+              publié au moment de la recherche. Les URL complètes figurent dans le document Word pour pouvoir être reprises telles quelles.
+            </p>
+          </article>
+
+          <div class="veille-grid">
+            <article class="card veille-card">
+              <h2>Partie 1 — Wi-Fi 7 (IEEE 802.11be)</h2>
+              <p><strong>Objectif :</strong> comprendre la norme, ses innovations et son déploiement en France.</p>
+              <ul class="veille-list">
+                <li><strong>Présentation :</strong> Wi-Fi 7 / 802.11be, EHT, certification Wi-Fi Alliance (janvier 2024), finalisation IEEE en 2025.</li>
+                <li><strong>MLO (Multi-Link Operation) :</strong> agrégation multi-bandes (2,4 / 5 / 6&nbsp;GHz) pour stabilité et latence.</li>
+                <li><strong>Débit &amp; spectre :</strong> canaux jusqu'à 320&nbsp;MHz (6&nbsp;GHz), modulation 4096-QAM.</li>
+                <li><strong>Preamble puncturing :</strong> réutiliser un canal malgré une partie perturbée (milieu dense).</li>
+                <li><strong>France :</strong> autorisation fin 2023 ; offres opérateurs (Free, Bouygues, SFR, Orange) suivies en 2024–2025.</li>
+                <li><strong>Usages :</strong> streaming 8K / VR, gaming, sites très denses ; limites : coût, compatibilité terminaux, besoin fibre adaptée.</li>
+              </ul>
+              <p class="veille-note">
+                Sources types dans le document : Wi-Fi Alliance, fabricants (NETGEAR, LB-LINK), médias spécialisés (Ariase, Choisir.com…).
+              </p>
+            </article>
+
+            <article class="card veille-card">
+              <h2>Partie 2 — Cybersécurité (sept. 2025 – mai 2026)</h2>
+              <p><strong>Objectif :</strong> suivre la menace, les modes opératoires et les réponses institutionnelles.</p>
+              <div class="veille-kpis">
+                <div class="veille-kpi">
+                  <strong>5&nbsp;629</strong>
+                  <span>Violations de données recensées par la CNIL (2024)</span>
+                </div>
+                <div class="veille-kpi">
+                  <strong>3&nbsp;586</strong>
+                  <span>Événements de sécurité traités par l'ANSSI (bilan 2025)</span>
+                </div>
+                <div class="veille-kpi">
+                  <strong>+70&nbsp;%</strong>
+                  <span>Progression du phishing (Cybermalveillance, rapport 2025)</span>
+                </div>
+              </div>
+              <ul class="veille-list" style="margin-top: 14px">
+                <li><strong>Menaces :</strong> phishing amplifié par l'IA, deep phishing, fraudes (virement, faux conseiller, faux placement).</li>
+                <li><strong>Cas d'étude :</strong> incidents autour de France Travail (exfiltration, récidive sur les Missions locales).</li>
+                <li><strong>Industrialisation :</strong> chaîne infostealer → accès initial → ransomware ; vol de tokens pour contourner le MFA.</li>
+                <li><strong>Institutionnel :</strong> bilan ANSSI, menace hybride sur infrastructures critiques, recommandations (MFA résistante FIDO2, PRA/PCA, sensibilisation…).</li>
+              </ul>
+            </article>
+
+            <article class="card veille-card">
+              <h2>Partie 3 — Directive NIS&nbsp;2 &amp; cadre français</h2>
+              <p><strong>Objectif :</strong> relier la réglementation européenne aux obligations concrètes des organisations.</p>
+              <ul class="veille-list">
+                <li><strong>NIS&nbsp;2 :</strong> élargissement des secteurs (7 → 18) et du nombre d'entités concernées en France.</li>
+                <li><strong>Transposition :</strong> retard vs échéance octobre 2024 ; suivi du projet de loi « Résilience » et procédures d'infraction UE.</li>
+                <li><strong>Obligations :</strong> entités essentielles vs importantes, sanctions, responsabilité des dirigeants, formation cyber.</li>
+                <li><strong>ReCyF (mars 2026) :</strong> référentiel cyber France publié par l'ANSSI pour aider à la mise en conformité.</li>
+                <li><strong>DORA :</strong> rappel du calendrier applicable au secteur financier (janvier 2025) et articulation avec NIS&nbsp;2.</li>
+              </ul>
+            </article>
+
+            <article class="card veille-card">
+              <h2>Synthèse &amp; lien avec le stage</h2>
+              <p>
+                Le Wi-Fi 7 devient une réalité déployée : MLO et canaux larges changent la conception des réseaux denses (stades, entreprises, Wi-Fi invité).
+                En parallèle, la cybermenace s'industrialise (IA, fraudes, supply chain) et le cadre légal se durcit avec NIS&nbsp;2 et le ReCyF.
+              </p>
+              <p>
+                Ces deux axes nourrissent mon travail de stage sur l'alignement des politiques de sécurité avec des référentiels reconnus (NIST CSF, ISO&nbsp;27001)
+                et l'actualisation face aux exigences réglementaires.
+              </p>
+              <h3 style="margin-bottom: 8px; font-size: 1rem">Quelques sources (extrait)</h3>
+              <ul class="veille-sources">
+                <li>
+                  <a href="https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-7" target="_blank" rel="noopener noreferrer">Wi-Fi Alliance — Wi-Fi CERTIFIED 7</a>
+                </li>
+                <li>
+                  <a href="https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2025" target="_blank" rel="noopener noreferrer">ANSSI — Panorama de la cybermenace 2025</a>
+                </li>
+                <li>
+                  <a href="https://cyber.gouv.fr/reglementation/cybersecurite-systemes-d-information/directives-nis-nis2-et-dispositif-saiv/directive-nis-2" target="_blank" rel="noopener noreferrer">ANSSI — Directive NIS&nbsp;2 &amp; dispositifs associés</a>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Louis Capronnier · <a href="mentions-legales.html">Mentions légales</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
